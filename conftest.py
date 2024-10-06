@@ -1,5 +1,4 @@
 import pytest
-from unittest.mock import Mock
 from tests.data_stellar_burgers import DataStellarBurgers
 from tests.helpers import Helpers
 

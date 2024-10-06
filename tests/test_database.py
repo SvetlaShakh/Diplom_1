@@ -8,7 +8,7 @@ class TestDatabase:
     def test_available_buns(self):
         database = Database()
         list_buns = database.available_buns()
-        assert len(list_buns) == DataStellarBurgers.numbers_buns and type(list_buns) == list
+        assert len(list_buns) == DataStellarBurgers.numbers_buns and type(list_buns) is list
 
     @pytest.mark.parametrize('index', DataStellarBurgers.index_bun)
     def test_name_and_price_buns(self, index):
@@ -22,7 +22,7 @@ class TestDatabase:
     def test_available_ingredients(self):
         database = Database()
         list_ingredients = database.available_ingredients()
-        assert len(list_ingredients) == DataStellarBurgers.numbers_ingredients and type(list_ingredients) == list
+        assert len(list_ingredients) == DataStellarBurgers.numbers_ingredients and type(list_ingredients) is list
 
     @pytest.mark.parametrize('index', DataStellarBurgers.index_ingredients)
     def test_list_name_sauce(self, index):

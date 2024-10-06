@@ -1,6 +1,7 @@
 from unittest.mock import Mock
 from tests.data_stellar_burgers import DataStellarBurgers
 
+
 class Helpers:
 
     @staticmethod

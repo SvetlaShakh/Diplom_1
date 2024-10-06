@@ -1,6 +1,3 @@
-import pytest
-from unittest.mock import Mock
-
 from praktikum.burger import Burger
 from tests.data_stellar_burgers import DataStellarBurgers
 from tests.helpers import Helpers
@@ -58,7 +55,7 @@ class TestBurger:
         burger.add_ingredient(filling)
         first_ingredient = burger.ingredients[0]
         second_ingredient = burger.ingredients[1]
-        burger.move_ingredient(1,0)
+        burger.move_ingredient(1, 0)
         assert burger.ingredients[0] == second_ingredient and burger.ingredients[1] == first_ingredient
 
     def test_get_price_burger(self, create_mock_ingredients):
